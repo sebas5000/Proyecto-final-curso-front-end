@@ -1,0 +1,224 @@
+
+*{
+    box-sizing: border-box;
+    border: darkblue 0px solid;
+    margin-left: 0;
+    font-family: sans-serif;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+/*propiedades del encabezado*/
+.header1{
+    background-color: #2e518b;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+h1{
+    float: left;
+    width: 95%;
+
+}
+
+#bcolor, #bbcolor, h1{
+    
+    text-align: center;
+    display:inline; 
+}
+#bcolor, #bbcolor{
+    float: right;
+    width: 5%;
+    
+}
+
+
+/* todo lo referente del menu desplegable comienza aqui */
+
+#menu{
+    position: fixed;
+    
+   }
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    background-color:#2e518b;
+   }
+   
+   /* enlaces del menu */
+   
+   #menu ul a, #menu ul p {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   #menu ul li:hover {
+    background:#5b78a7;
+   }
+
+
+   #menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+   }
+   
+   /* items del menu desplegable */
+   
+   #menu ul ul li {
+    float:none;
+    width:150px
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   #menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   #menu ul li:hover > ul {
+    display:block;
+   }
+
+   /*----------------- menu termina aqui -------------- */
+
+
+
+/* propiedades de las secciones*/
+#basicos{
+    display: block;
+    margin-top: 100px;
+    float: left;
+    width: 30%;
+    border-right: black 3px solid;
+}
+#basicos img{
+    margin-left: 30px;
+}
+
+#secri{
+    display: block;
+    margin-top: 100px;
+    float: right;
+    width: 65%;
+}
+#secri p{
+    font-size: 150%;
+}
+
+
+#flecha{
+    
+    position: fixed;
+    right: 10px;
+    bottom: 5px;   
+}
+
+
+
+.barra{
+
+    display:block;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 4px black double;
+    border-bottom: 4px black double;
+    float: right;
+    font-size: 150%;
+   
+}
+.barra h4{
+    text-align: center;
+   /* border-top: solid black;
+    border-bottom: solid black;*/
+    text-decoration: overline underline 5px solid;
+    
+}
+
+#nivel, #idioma, #conoc{
+
+    display:block;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 4px black double;
+    border-bottom: 4px black double;
+    float: right;
+    font-size: 150%;
+    text-align: center;
+}
+
+#nivel h4, #idioma h4, #conoc h4{
+    text-align: center;
+   /* border-top: solid black;
+    border-bottom: solid black;*/
+    text-decoration: overline underline 5px solid;
+    
+}
+#nivel ul, #idioma ul{
+    display: inline-block;
+}
+
+#nivel ul p, #idioma ul p{
+    display: block;
+    
+}
+
+
+   /* responsive */
+   @media only screen and (max-width: 600px),handheld{
+
+    .barra, #nivel, #idioma, #conoc{
+        font-size: 70%;
+    }
+
+    #secri p{
+        font-size: 60%;
+    }
+
+    .header1{
+        font-size: 70%;
+    }
+    #menu ul a, #menu ul p {
+        font-size: 50%;
+        font-weight:300;
+        font-size:10px;
+        
+    }
+
+
+}
+
+
+
